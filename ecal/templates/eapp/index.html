@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get">
+
+        <input type="submit" name="submit" id="">
+    </form>
+
+    <table border="1">
+        <caption>Expenses</caption>
+        <tr>
+            <th>S.No</th>
+            <th>DATE</th>
+            <th>Expenses</th>
+            <th>Amt Spent</th>
+
+        </tr>
+
+        {%for i in s%}
+
+        <tr>
+            <td>{{i.s_no}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.expense}}</td>
+            <td>{{i.amt}}</td>
+        </tr>
+
+        {%endfor%}
+
+        </tr>
+
+
+
+
+
+
+
+    </table>
+    <h1>Total Amount:{{tot}}</h1>
+    <h2>Amount Spent:{{p}}</h2>
+    <p></p>
+    <h1>Balance Amount:{{bal}}</h1>
+
+</body>
+<style>
+    h2 {
+        -webkit-text-fill-color: rgb(11, 88, 125);
+    }
+
+    h1 {
+        -webkit-text-fill-color: rgb(11, 88, 97);
+    }
+
+    body {
+
+        background: linear-gradient(rgb(204, 75, 198), rgb(138, 17, 204));
+    }
+</style>
+
+</html>
